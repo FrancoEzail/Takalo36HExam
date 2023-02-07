@@ -18,6 +18,7 @@ create table Objet (
     nomObjet varchar(30),
     descrit varchar(30),
     photo varchar(30),
+    prix int,
     idUser int,
     FOREIGN KEY (idUser) REFERENCES Utilisateur(idUser)
 );
@@ -42,8 +43,8 @@ create table Echange (
 ------------------------------------------
 insert into Utilisateur values(null,'francoEzail','iverson','francoezail@gmail.com');
 
-insert into Objet values(null,'talons','talons aiguille rose','assets/img/r4.jpg',null);
-insert into Objet values(null,'talons aiguille ','talons noires','assets/img/r1.jpg',null);
+insert into Objet values(null,'talons','talons aiguille rose','assets/img/r4.jpg',1);
+insert into Objet values(null,'talons aiguille ','talons noires','assets/img/r1.jpg',1);
 insert into Objet values(null,'haut','haut noir pour femme ','assets/img/r3.jpg',null);
 insert into Objet values(null,'vetement','vetement bleu','assets/img/r5.jpg',null);
 insert into Objet values(null,'chaussures','chaussure rouge','assets/img/r6.jpg',null);
