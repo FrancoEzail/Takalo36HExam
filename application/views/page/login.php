@@ -1,34 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="page/login.css">
-    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/login.css">
-    <title>Login Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>template1</title>
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Teko:400,700&amp;display=swap">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/Login-Form-Clean.css">
+    <link rel="stylesheet" href="<?php echo base_url();?>assets/css/styles.css">
 </head>
 
 <body>
-    <div id="page">
-        <div id="content1">
-            <h1 class="Poppins">Sign in</h1>
-            <p class="Poppins">or use your account</p>
-            <form action="<?php echo base_url('welcome/login');?>" method="post">
-                <input type="email" name="mail" placeholder="Email" ><br>
-                <input type="password" name="pass" placeholder="Password" >
-                <h4><a href="page/updatePass.php"> Forgot Passwors ? </a></h4>
-                <input type="submit" value="Sign In" class="btnInscr">
-            </form>
-        </div>
-        <!-- ---------------------------Page-Right---------------------------------- -->
-        <div id="content2">
-            <h1 class="Poppins">Hello,Friend!</h1>
-            <p class="Poppins">Enter your personal details and start journey with us</p>
-            <form action="page/inscription.php">
-                <input type="submit" value="SIGN UP" class="signup" class="Poppins">
-            </form>
-        </div>
-    </div>
+    <section class="login-clean">
+        <form method="post" action="<?php echo base_url('welcome/login');?>">
+            <h2 class="visually-hidden">Login Form</h2>
+            <div class="illustration"><i class="icon ion-ios-navigate"></i></div>
+            <div class="mb-3"><input class="form-control" type="email" name="mail" placeholder="Email"></div>
+            <div class="mb-3"><input class="form-control" type="password" name="pass" placeholder="Password"></div>
+            <div class="mb-3"><button class="btn btn-primary d-block w-100" type="submit">Log In</button></div><a class="forgot" href="#">Inscription</a>
+        </form>
+    </section>
+    <script src="<?php echo base_url();?>assets/bootstrap/js/bootstrap.min.js"></script>
 </body>
+
 </html>

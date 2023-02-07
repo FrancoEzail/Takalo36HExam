@@ -3,15 +3,17 @@
 
     class Model extends CI_Model 
     {
-        public function find()
+        public function getUser()
         {
-            return array('nom'=>'Franco','Prenom'=>'ezail');
+            $sql = "select * from Utilisateur";
+            $query = $this->db->query($sql);
+            $result = $query->result_array();
+            return $result;
         }
-
-        public function listeProduit()
+        
+        public function listeObjet()
         {   
-            $_SESSION['franco'] = "bonjour";
-            $sql = "select * from Marque";
+            $sql = "select * from Objet";
             $query = $this->db->query($sql);
             $result = array();
 
@@ -24,10 +26,14 @@
 
         public function checkLogin($mail,$pass)
         {
+            $listUser = $this->Model->getUser();
             $valiny = false;
-            if($mail == 'francoezail@gmail.com' && $pass == 'iverson')
+            for($i=0;$i<count($listUser);$i++)
+            {
+                if($listUser[$i]['email'] == $mail && $listUser[$i]['mdp']== $pass)
             {
                 $valiny = true;
+            } 
             }
             return $valiny;
         }

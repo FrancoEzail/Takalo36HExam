@@ -34,7 +34,7 @@ class Welcome extends CI_Controller {
 		if($this->Model->checkLogin($mail,$pass))
 		{
 			$this->session->set_userdata('mail', $mail);
-			redirect('product/index');
+			redirect('allObject/index1');
 		}else{
 			redirect('welcome/index');
 		}
