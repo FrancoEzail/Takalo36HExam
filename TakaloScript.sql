@@ -38,7 +38,16 @@ create table Echange (
     FOREIGN KEY (idObjet2) REFERENCES Objet(idObjet)
 );
 ------------------------------------------
---REQUETE
+--INSERTION
 ------------------------------------------
-select * from 
+insert into Utilisateur values(null,'francoEzail','iverson','francoezail@gmail.com');
+
+insert into Objet values(null,'talons','talons aiguille rose','assets/img/r4.jpg',null);
+insert into Objet values(null,'talons aiguille ','talons noires','assets/img/r1.jpg',null);
+insert into Objet values(null,'haut','haut noir pour femme ','assets/img/r3.jpg',null);
+insert into Objet values(null,'vetement','vetement bleu','assets/img/r5.jpg',null);
+insert into Objet values(null,'chaussures','chaussure rouge','assets/img/r6.jpg',null);
+insert into Objet values(null,'robe','robe noir avec motif ','assets/img/r10.jpg',null);
+
+
 
