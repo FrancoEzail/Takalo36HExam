@@ -34,15 +34,15 @@
                         <?php if(isset($listeObjet))
                         {
                           foreach ($listeObjet as $Objet) { ?> 
-                        <div style="height: 122px;background: #f5f5f5;border-radius: 10;box-shadow: 9px 6px 20px 0px rgba(44,44,44,0.21);margin-top: 32px;padding-left: 10%;padding-top: 2%;"><img class="float-end" style="margin-right: 4%;">
+                        <div style="height: 190px;background: #f5f5f5;border-radius: 10;box-shadow: 9px 6px 20px 0px rgba(44,44,44,0.21);margin-top: 32px;padding-left: 10%;padding-top: 1%;"><img class="float-end" style="margin-right: 4%;">
                          
                             <p style="width: 50%;color: rgb(7,43,69);"><?php echo $Objet['nomObjet']?></p>
                             <p style="width: 50%;color: rgb(7,43,69);"><?php echo $Objet['descrit']?></p>
-                            <p class="text-center float-end"><img src="<?php echo base_url();?><?php echo $Objet['photo']?>"></p>
-                            <p style="width: 50%;color: rgb(7,43,69);"><?php echo $Objet['prix']?></p>
-                           
+                            <p class="text-center float-end" style="width: 50%;color: rgb(7,43,69); margin-top:-87px;"><img width="35%" src="<?php echo base_url();?><?php echo $Objet['photo']?>"></p>
+                            <p style="width: 50%;color: rgb(255, 43, 78);font-weight: bold; ">$<?php echo $Objet['prix']?></p>
+                            <p><button style=" width:100px; height: 30px; color:white; border-radius: 15px;border:none ;background-color: rgb(255, 43, 78);">Echanger</button></p>
                         </div>
-                        <?php }
+                         <?php }
                           }?>
                     </div>
                 </div>
