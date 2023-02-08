@@ -42,13 +42,14 @@ create table Echange (
 --INSERTION
 ------------------------------------------
 insert into Utilisateur values(null,'francoEzail','iverson','francoezail@gmail.com');
+insert into Utilisateur values(null,'MitiaAndria','mitia123','mitiaandria@gmail.com');
 
-insert into Objet values(null,'talons','talons aiguille rose','assets/img/r4.jpg',1);
-insert into Objet values(null,'talons aiguille ','talons noires','assets/img/r1.jpg',1);
-insert into Objet values(null,'haut','haut noir pour femme ','assets/img/r3.jpg',null);
-insert into Objet values(null,'vetement','vetement bleu','assets/img/r5.jpg',null);
-insert into Objet values(null,'chaussures','chaussure rouge','assets/img/r6.jpg',null);
-insert into Objet values(null,'robe','robe noir avec motif ','assets/img/r10.jpg',null);
+insert into Objet values(null,'talons','talons aiguille rose','assets/img/r4.jpg',100,1);
+insert into Objet values(null,'talons aiguille ','talons noires','assets/img/r1.jpg',200,1);
+insert into Objet values(null,'haut','haut noir pour femme ','assets/img/r3.jpg',250,1);
+insert into Objet values(null,'vetement','vetement bleu','assets/img/r5.jpg',125,2);
+insert into Objet values(null,'chaussures','chaussure rouge','assets/img/r6.jpg',110,2);
+insert into Objet values(null,'robe','robe noir avec motif ','assets/img/r10.jpg',50,2);
 
 
 

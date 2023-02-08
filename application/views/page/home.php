@@ -31,18 +31,19 @@
                         <h5 class="text-center" style="color: rgb(7,43,69);">
                             <strong>Object Able</strong>
                         </h5>
-                        
-                        <div style="height: 122px;background: #f5f5f5;border-radius: 10;box-shadow: 9px 6px 20px 0px rgba(44,44,44,0.21);margin-top: 32px;padding-left: 10%;padding-top: 2%;"><img class="float-end" style="margin-right: 4%;">
                         <?php if(isset($listeObjet))
                         {
-                          foreach ($listeObjet as $Objet) { ?>  
+                          foreach ($listeObjet as $Objet) { ?> 
+                        <div style="height: 122px;background: #f5f5f5;border-radius: 10;box-shadow: 9px 6px 20px 0px rgba(44,44,44,0.21);margin-top: 32px;padding-left: 10%;padding-top: 2%;"><img class="float-end" style="margin-right: 4%;">
+                         
                             <p style="width: 50%;color: rgb(7,43,69);"><?php echo $Objet['nomObjet']?></p>
                             <p style="width: 50%;color: rgb(7,43,69);"><?php echo $Objet['descrit']?></p>
-                            <p class="text-center float-end" style="width: 50%;color: rgb(7,43,69);">Prix</p>
-                            <p style="width: 50%;color: rgb(7,43,69);">Etat</p>
-                            <?php }
-                          }?>
+                            <p class="text-center float-end"><img src="<?php echo base_url();?><?php echo $Objet['photo']?>"></p>
+                            <p style="width: 50%;color: rgb(7,43,69);"><?php echo $Objet['prix']?></p>
+                           
                         </div>
+                        <?php }
+                          }?>
                     </div>
                 </div>
             </div>
